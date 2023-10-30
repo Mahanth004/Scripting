@@ -1,0 +1,83 @@
+/* Custom CSS for your webpage */
+#masthead {
+    background-image: url(/images/MahanthPic.jpg);
+    background-size: cover;
+background-position: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #444;
+    /*to centre the text in nav bar*/
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: rgb(198, 198, 198);
+}
+
+nav a:active {
+
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #444;
+}
+
+nav li {
+    float: left;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    float: right;
+    color: #fff;
+
+    
+}
+.head-title {
+    margin-top: 300px;
+    margin-right: 20px;
+}
+
+.alternate {
+    width: 60px;
+    padding: 10px;
+}
+
+footer {
+    font-size: 10px;
+    margin: 20px;
+
+}
