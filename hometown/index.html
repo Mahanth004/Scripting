@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  </style>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+
+
+<body>
+  <section class="opener">
+    <nav>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="geography.html">GEOGRAPHY</a></li>
+          <li><a href="people.html">PEOPLE</a></li>
+          <li><a href="/economy.html">ECONOMY</a></li>
+          <li><a href="attractions.html">ATTRACTIONS</a></li>
+          <li><a href="/photos.html">PHOTOS</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1> Bengaluru</h1>
+      <p>Silicon Valley of India</p>
+      <a href="https://www.google.com/travel/explore?tfs=CBwQAxoPag0IAhIJL20vMDFxd2tkGg9yDQgCEgkvbS8wMXF3a2RAAUgBcAKCAQsI____________AZgBAbIBEhgBIAEqDAgDEggvbS8wOWMxNw&tfu=GioaKAoSCSVXmSyhv1BAEff6tVBt7F1AEhIJ7gIQ8fQvS8AR7_VroVq_QUA"
+        class="visit-btn" target="blank">Visit us</a>
+    </div>
+  </section>
+
+  <!---Known as-->
+  <section class="bg">
+    <section class="knownfor">
+      <h2>Bengaluru is also known as</h2>
+
+
+      <div class="row">
+        <div class="knownfor-col">
+          <h3>IT Hub</h3>
+          <p>Bengaluru is renowned as a major Information Technology (IT) hub, housing numerous tech parks, software
+            companies, and startups. It plays a crucial role in the global IT industry and is referred to as the Silicon
+            Valley of India.</p>
+        </div>
+
+        <div class="knownfor-col">
+          <h3>Garden City</h3>
+          <p>Bengaluru is also called the "Garden City of India" due to its numerous parks and green spaces. Lalbagh
+            Botanical Garden and Cubbon Park are iconic examples, contributing to the city's pleasant and green
+            environment.</p>
+        </div>
+
+        <div class="knownfor-col">
+          <h3>Culinary Delight</h3>
+          <p>The city is known for its diverse culinary scene, offering a wide range of cuisines from traditional South
+            Indian dishes to international flavors. Bengaluru has a vibrant food culture, with its numerous cafes,
+            restaurants, and street food options.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!---History-->
+    <section class="historycontent">
+      <div class="row">
+        <div class="history-col">
+          <h2>HISTORY</h2>
+          <p>Bengaluru, the capital city of the Indian state of Karnataka, has a history that dates back over a thousand
+            years. In the 16th century, the region was part of the Vijayanagara Empire. The foundations of the city were
+            laid when Kempe Gowda I, a local chieftain, established a mud fort in 1537. This fort, known as Bengaluru
+            Pete, marked the beginning of the city.</p>
+
+          <p>The late 20th century witnessed a transformative phase for Bengaluru as it emerged as a major hub for
+            information technology. The city's IT boom in the late 20th and early 21st centuries earned it the nickname
+            "Silicon Valley of India." Today, Bengaluru is not only a leading IT hub but also a thriving metropolis
+            known
+            for its cultural diversity, green spaces, and a blend of tradition and modernity.</p>
+        </div>
+
+        <div class="history-col">
+          <img src="/images/history.jpg" alt="Kempegowda Statue">
+
+
+          <p></p>
+          <p></p>
+          <img src="/images/history2.jpeg" alt="World Trade Centre">
+
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+
+  <!---Toggle menu with JavaScript-->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.left = "0";
+    }
+    function hideMenu() {
+      navLinks.style.left = "-200px";
+    }
+  </script>
+
+  <!---FOOTER-->
+  <footer>
+    <p>Designed by Mahanth Bhogi</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/explore/locations/106377336067638/bangalore-india/?hl=en" target="_blank"><i
+          class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.facebook.com/events/explore/bangalore-india/106377336067638/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22search%22%7D%2C%7B%22surface%22%3A%22city_guides%22%7D]%2C%22ref_notif_type%22%3Anull%7D"
+        target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+    </div>
+  </footer>
+
+
+</body>
+
+
+
+</html>

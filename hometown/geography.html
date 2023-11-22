@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  </style>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+
+<body>
+  <section class="geoopener">
+    <nav>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+
+        <ul>
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/geography.html">GEOGRAPHY</a></li>
+          <li><a href="/people.html">PEOPLE</a></li>
+          <li><a href="/economy.html">ECONOMY</a></li>
+          <li><a href="/attractions.html">ATTRACTIONS</a></li>
+          <li><a href="/photos.html">PHOTOS</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="geo-box">
+      <h1> Geography</h1>
+      <p>Bengaluru boasts a diverse geography of urban landscapes, lush gardens, and surrounding hills</p>
+
+    </div>
+  </section>
+
+  <!---Terrain content-->
+  <section class="bg">
+  <section class="geocontent">
+    <div class="row">
+      <div class="geo-col">
+        <h2>TERRAIN</h2>
+        <p>Bengaluru is situated on the Deccan Plateau, at an elevation of about 3,000 feet above sea level. The plateau
+          terrain contributes to the city's relatively moderate climate and scenic landscapes.</p>
+      </div>
+
+      <div class="geo-col">
+        <img src="/images/aerial.jpeg" alt="Bangalore Aerial View">
+      </div>
+
+    </div>
+  </section>
+
+  <!---Water content-->
+  <section class="watercontent">
+    <div class="row">
+      <div class="water-col">
+        <img src="/images/water.jpeg" alt="Bangalore Aerial View">
+      </div>
+
+      <div class="geo-col">
+        <h2>WATER BODIES</h2>
+        <p>The city is dotted with numerous lakes, both natural and man-made. These include iconic water bodies like
+          Ulsoor Lake and Bellandur Lake. Bengaluru's geography has been shaped by these lakes, providing recreational
+          spaces and contributing to the city's water resources.</p>
+      </div>
+    </div>
+
+      <!---Greenery-->
+      <section class="greencontent">
+        <div class="row">
+          <div class="geo-col">
+            <h2>GREENERY</h2>
+            <p>Bengaluru is known for its green cover, with parks and gardens interspersed throughout the urban expanse. Notable examples include Cubbon Park and Lalbagh Botanical Garden. This emphasis on greenery adds a unique aspect to the city's geography, offering visitors alike pockets of natural beauty.</p>
+          </div>
+    
+          <div class="geo-col">
+            <img src="/images/greenery.jpeg" alt="Bangalore Aerial View">
+          </div>
+    
+        </div>
+      </section>
+
+  </section>
+</section>
+
+
+  <!---Toggle menu with JavaScript-->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.left = "0";
+    }
+    function hideMenu() {
+      navLinks.style.left = "-200px";
+    }
+  </script>
+
+  <!---FOOTER-->
+<footer>
+  <p>Designed by Mahanth Bhogi</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/explore/locations/106377336067638/bangalore-india/?hl=en" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.facebook.com/events/explore/bangalore-india/106377336067638/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22search%22%7D%2C%7B%22surface%22%3A%22city_guides%22%7D]%2C%22ref_notif_type%22%3Anull%7D" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        </div>
+</footer>
+</body>
+
+</html>
